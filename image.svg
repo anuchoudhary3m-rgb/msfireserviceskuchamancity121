@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Wall & Room Gradients -->
+    <linearGradient id="wallBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E222D" />
+      <stop offset="60%" stop-color="#141824" />
+      <stop offset="100%" stop-color="#0B0E17" />
+    </linearGradient>
+
+    <linearGradient id="woodDesk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9A5B32" />
+      <stop offset="25%" stop-color="#6F3918" />
+      <stop offset="70%" stop-color="#4E240D" />
+      <stop offset="100%" stop-color="#2D1305" />
+    </linearGradient>
+
+    <linearGradient id="deskFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18181B" />
+      <stop offset="50%" stop-color="#09090B" />
+      <stop offset="100%" stop-color="#18181B" />
+    </linearGradient>
+
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2A77A" />
+      <stop offset="50%" stop-color="#C68B5E" />
+      <stop offset="100%" stop-color="#A96F43" />
+    </linearGradient>
+
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <linearGradient id="fireBrandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2E2E" />
+      <stop offset="100%" stop-color="#D62828" />
+    </linearGradient>
+
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B4834" />
+      <stop offset="50%" stop-color="#4E3324" />
+      <stop offset="100%" stop-color="#322016" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Wall of MS Fire Service Industries Office -->
+  <rect x="0" y="0" width="600" height="600" fill="url(#wallBg)" />
+
+  <!-- Wood Paneling Trim on Left & Right -->
+  <rect x="0" y="0" width="105" height="420" fill="#2E1B10" />
+  <rect x="525" y="0" width="75" height="420" fill="#2E1B10" />
+
+  <!-- Shelves on the left with Fire Extinguishers -->
+  <rect x="5" y="40" width="95" height="8" fill="#4A2F1D" />
+  <rect x="5" y="140" width="95" height="8" fill="#4A2F1D" />
+  <rect x="5" y="240" width="95" height="8" fill="#4A2F1D" />
+
+  <!-- Extinguisher on shelf 1 -->
+  <rect x="18" y="55" width="22" height="45" rx="8" fill="#D62828" />
+  <rect x="25" y="48" width="8" height="7" fill="#111827" />
+  <rect x="52" y="52" width="26" height="50" rx="9" fill="#D62828" />
+  <rect x="61" y="44" width="8" height="8" fill="#111827" />
+
+  <!-- Fire helmets on shelf 2 -->
+  <ellipse cx="32" cy="180" rx="20" ry="12" fill="#EAB308" />
+  <ellipse cx="72" cy="178" rx="22" ry="14" fill="#D62828" />
+
+  <!-- Wall Board Graphics (Red geometric angular stripe) -->
+  <path d="M 105 190 L 300 280 L 105 340 Z" fill="#991B1B" opacity="0.85" />
+  <path d="M 525 190 L 300 280 L 525 340 Z" fill="#991B1B" opacity="0.85" />
+
+  <!-- Certificates on the right wall -->
+  <rect x="535" y="30" width="55" height="42" fill="#FFFFFF" stroke="#D97706" stroke-width="3" />
+  <rect x="535" y="85" width="55" height="42" fill="#FFFFFF" stroke="#D97706" stroke-width="3" />
+  <rect x="535" y="140" width="55" height="42" fill="#FFFFFF" stroke="#D97706" stroke-width="3" />
+  <rect x="535" y="195" width="55" height="42" fill="#FFFFFF" stroke="#D97706" stroke-width="3" />
+
+  <!-- Office Wall Logo "MS FIRE SERVICE INDUSTRIES - KUCHAMAN CITY" -->
+  <g id="wallLogo" filter="url(#softShadow)">
+    <!-- MS emblem -->
+    <path d="M 245 42 L 260 16 L 278 16 L 288 38 L 298 16 L 316 16 L 302 42 Z" fill="url(#fireBrandGrad)" />
+    <path d="M 312 20 L 340 20 L 340 28 L 322 28 C 322 34, 342 36, 342 45 L 314 45 Z" fill="#FFFFFF" />
+
+    <!-- Text: FIRE SERVICE -->
+    <text x="300" y="86" font-family="'Montserrat', Impact, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">
+      FIRE SERVICE
+    </text>
+
+    <!-- Red Banner with INDUSTRIES -->
+    <rect x="180" y="98" width="240" height="26" rx="4" fill="#D62828" />
+    <text x="300" y="117" font-family="'Montserrat', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+      INDUSTRIES
+    </text>
+
+    <!-- Pill with KUCHAMAN CITY -->
+    <rect x="210" y="132" width="180" height="22" rx="11" fill="#DC2626" />
+    <text x="300" y="148" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">
+      KUCHAMAN CITY
+    </text>
+
+    <!-- Hotline -->
+    <text x="460" y="152" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#F87171">
+      📞 6378647799
+    </text>
+  </g>
+
+  <!-- 2. High-Back Executive Leather Chair -->
+  <g id="executiveChair">
+    <path d="M 230 200 
+             C 230 160, 370 160, 370 200 
+             L 378 370 
+             L 222 370 Z" 
+          fill="url(#chairGrad)" 
+          stroke="#1F150E" 
+          stroke-width="5" />
+    <!-- Tufting details -->
+    <line x1="260" y1="210" x2="340" y2="210" stroke="#322016" stroke-width="3" />
+    <line x1="250" y1="260" x2="350" y2="260" stroke="#322016" stroke-width="3" />
+    <line x1="245" y1="310" x2="355" y2="310" stroke="#322016" stroke-width="3" />
+  </g>
+
+  <!-- 3. Proprietor: Pro. MANOHAR LAL -->
+  <g id="manoharLal" filter="url(#softShadow)">
+    <!-- Shoulders & Body (White collared formal shirt) -->
+    <path d="M 185 385 
+             L 220 285 
+             C 240 280, 260 275, 300 275 
+             C 340 275, 360 280, 380 285 
+             L 415 385 
+             L 185 385 Z" 
+          fill="url(#shirtGrad)" 
+          stroke="#94A3B8" 
+          stroke-width="1.5" />
+
+    <!-- Shirt folds and placket -->
+    <line x1="300" y1="285" x2="300" y2="385" stroke="#CBD5E1" stroke-width="3" />
+    <!-- Buttons -->
+    <circle cx="300" cy="305" r="2.5" fill="#64748B" />
+    <circle cx="300" cy="330" r="2.5" fill="#64748B" />
+    <circle cx="300" cy="355" r="2.5" fill="#64748B" />
+
+    <!-- Collar -->
+    <path d="M 268 268 L 290 295 L 300 280 L 285 264 Z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5" />
+    <path d="M 332 268 L 310 295 L 300 280 L 315 264 Z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5" />
+
+    <!-- Neck -->
+    <rect x="282" y="246" width="36" height="34" rx="4" fill="url(#skinGrad)" />
+
+    <!-- Head / Face -->
+    <ellipse cx="300" cy="216" rx="34" ry="42" fill="url(#skinGrad)" />
+
+    <!-- Ears -->
+    <ellipse cx="264" cy="216" rx="6" ry="12" fill="#C68B5E" />
+    <ellipse cx="336" cy="216" rx="6" ry="12" fill="#C68B5E" />
+
+    <!-- Styled Black Hair -->
+    <path d="M 266 210 
+             C 264 175, 290 160, 316 160 
+             C 336 160, 340 178, 334 210 
+             C 328 190, 314 185, 300 185 
+             C 285 185, 274 192, 266 210 Z" 
+          fill="#111827" />
+
+    <!-- Eyebrows -->
+    <path d="M 276 200 Q 288 196 295 200" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 305 200 Q 312 196 324 200" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes -->
+    <ellipse cx="286" cy="208" rx="4.5" ry="3.5" fill="#FFFFFF" />
+    <circle cx="286" cy="208" r="2.5" fill="#1E293B" />
+    <ellipse cx="314" cy="208" rx="4.5" ry="3.5" fill="#FFFFFF" />
+    <circle cx="314" cy="208" r="2.5" fill="#1E293B" />
+
+    <!-- Nose -->
+    <path d="M 300 206 L 298 224 L 304 225" stroke="#9A5B32" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Trimmed Neat Mustache & Beard -->
+    <path d="M 288 232 Q 300 236 312 232" stroke="#111827" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 292 237 Q 300 240 308 237" stroke="#9A5B32" stroke-width="2" fill="none" />
+    <!-- Beard along jawline -->
+    <path d="M 272 216 
+             C 274 246, 290 258, 300 258 
+             C 310 258, 326 246, 328 216 
+             C 324 238, 312 250, 300 250 
+             C 288 250, 276 238, 272 216 Z" 
+          fill="#111827" opacity="0.9" />
+
+    <!-- Arms & Clasped Hands Resting on Desk -->
+    <g id="armsAndHands">
+      <!-- Left Forearm (White Shirt Sleeve) -->
+      <path d="M 210 385 L 260 350 L 285 365 L 230 405 Z" fill="url(#shirtGrad)" stroke="#CBD5E1" />
+      <!-- Right Forearm -->
+      <path d="M 390 385 L 340 350 L 315 365 L 370 405 Z" fill="url(#shirtGrad)" stroke="#CBD5E1" />
+
+      <!-- Left Wrist with Watch -->
+      <rect x="282" y="360" width="12" height="14" rx="2" fill="#1E293B" stroke="#000" />
+      <circle cx="288" cy="367" r="4.5" fill="#E2E8F0" />
+
+      <!-- Red Sacred Thread / Kalawa on Right Wrist -->
+      <path d="M 314 362 L 322 364" stroke="#DC2626" stroke-width="3" />
+
+      <!-- Clasped Hands Center -->
+      <ellipse cx="295" cy="368" rx="14" ry="10" fill="url(#skinGrad)" />
+      <ellipse cx="308" cy="368" rx="14" ry="10" fill="url(#skinGrad)" />
+      <!-- Fingers detail -->
+      <path d="M 288 365 Q 302 360 316 365" stroke="#9A5B32" stroke-width="1.5" fill="none" />
+      <path d="M 290 370 Q 302 366 314 370" stroke="#9A5B32" stroke-width="1.5" fill="none" />
+    </g>
+  </g>
+
+  <!-- 4. Polished Wooden Executive Desk Surface (Foreground) -->
+  <g id="deskForeground" filter="url(#softShadow)">
+    <!-- Polished Desk Top -->
+    <polygon points="0,380 600,380 600,440 0,440" fill="url(#woodDesk)" />
+    <!-- Polish Reflection Highlight -->
+    <polygon points="0,380 600,380 600,392 0,392" fill="#FFFFFF" opacity="0.18" />
+
+    <!-- Desk Items -->
+    <!-- Laptop on Left -->
+    <polygon points="40,410 145,410 155,360 50,360" fill="#334155" stroke="#1E293B" stroke-width="2" />
+    <rect x="52" y="315" width="85" height="52" rx="4" fill="#0F172A" stroke="#475569" stroke-width="2" />
+    <circle cx="94" cy="341" r="9" fill="#94A3B8" />
+    <text x="94" y="344" font-family="'Inter', sans-serif" font-size="8" font-weight="900" fill="#0F172A" text-anchor="middle">hp</text>
+
+    <!-- Nameplate on Desk -->
+    <polygon points="50,432 170,432 165,410 55,410" fill="#0F172A" stroke="#D62828" stroke-width="1.5" />
+    <text x="110" y="420" font-family="'Montserrat', sans-serif" font-size="7.5" font-weight="900" fill="#DC2626" text-anchor="middle">
+      MS FIRE SERVICE
+    </text>
+    <text x="110" y="428" font-family="'Inter', sans-serif" font-size="6" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      INDUSTRIES - KUCHAMAN
+    </text>
+
+    <!-- Notebook & Pen -->
+    <polygon points="230,418 335,418 330,392 235,392" fill="#1E293B" stroke="#64748B" />
+    <line x1="260" y1="398" x2="310" y2="408" stroke="#D97706" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Custom MS Coffee Mug -->
+    <rect x="380" y="375" width="32" height="38" rx="4" fill="#111827" stroke="#334155" />
+    <path d="M 412 384 C 422 384, 422 402, 412 402" stroke="#111827" stroke-width="3.5" fill="none" />
+    <text x="396" y="398" font-family="'Montserrat', sans-serif" font-size="10" font-weight="900" fill="#DC2626" text-anchor="middle">MS</text>
+
+    <!-- Product Catalogs / Flyers on Right -->
+    <polygon points="460,430 575,420 565,395 450,405" fill="#DC2626" stroke="#991B1B" />
+    <polygon points="465,424 570,415 562,398 458,406" fill="#FFFFFF" />
+  </g>
+
+  <!-- 5. Front Desk Facade with Official Branding (Bottom) -->
+  <g id="deskFrontBranding">
+    <rect x="0" y="440" width="600" height="160" fill="url(#deskFront)" />
+    <!-- Red Top Accent Strip -->
+    <rect x="0" y="440" width="600" height="6" fill="#D62828" />
+
+    <!-- Badges on Left: Protection, Service, Trust -->
+    <g transform="translate(15, 470)">
+      <circle cx="20" cy="18" r="14" fill="#1E293B" stroke="#DC2626" stroke-width="1.5" />
+      <path d="M 15 14 L 20 23 L 26 11" stroke="#DC2626" stroke-width="2" fill="none" />
+      <text x="20" y="44" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#E2E8F0" text-anchor="middle">PROTECTION</text>
+
+      <circle cx="75" cy="18" r="14" fill="#1E293B" stroke="#DC2626" stroke-width="1.5" />
+      <circle cx="75" cy="18" r="5" fill="#DC2626" />
+      <text x="75" y="44" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#E2E8F0" text-anchor="middle">SERVICE</text>
+
+      <circle cx="130" cy="18" r="14" fill="#1E293B" stroke="#DC2626" stroke-width="1.5" />
+      <path d="M 122 18 Q 130 12 138 18" stroke="#DC2626" stroke-width="2" fill="none" />
+      <text x="130" y="44" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#E2E8F0" text-anchor="middle">TRUST</text>
+    </g>
+
+    <!-- Vertical separator line -->
+    <line x1="180" y1="465" x2="180" y2="530" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Center/Right Desk Branding -->
+    <g transform="translate(200, 460)">
+      <text x="190" y="32" font-family="'Inter', cursive, sans-serif" font-style="italic" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+        MS Fire Service Industries
+      </text>
+      <!-- Red underline accent -->
+      <line x1="280" y1="42" x2="360" y2="40" stroke="#DC2626" stroke-width="3" />
+      <!-- KUCHAMAN CITY -->
+      <text x="190" y="68" font-family="'Montserrat', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="5">
+        KUCHAMAN CITY
+      </text>
+    </g>
+  </g>
+</svg>

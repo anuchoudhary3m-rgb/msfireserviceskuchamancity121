@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E1E" />
+      <stop offset="60%" stop-color="#D62828" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+
+    <linearGradient id="orangeFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D62828" />
+      <stop offset="50%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFB703" />
+    </linearGradient>
+
+    <linearGradient id="blackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Circular Outer Background -->
+  <circle cx="250" cy="250" r="240" fill="#FFFFFF" />
+  
+  <!-- Outer Red Ring -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="#D62828" stroke-width="14" />
+  <!-- Inner Black Ring -->
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#111827" stroke-width="5" />
+
+  <!-- Shield Shape Outline in Background -->
+  <path d="M 105 150 
+           L 105 320 
+           C 105 390, 250 440, 250 440 
+           C 250 440, 395 390, 395 320 
+           L 395 150 
+           L 250 85 Z" 
+        fill="#FFFFFF" 
+        stroke="#111827" 
+        stroke-width="5" />
+  <path d="M 120 162 
+           L 120 310 
+           C 120 370, 250 418, 250 418 
+           C 250 418, 380 370, 380 310 
+           L 380 162 
+           L 250 102 Z" 
+        fill="none" 
+        stroke="#D62828" 
+        stroke-width="4" />
+
+  <!-- Top Flames Behind Extinguisher -->
+  <g id="flames">
+    <!-- Left Flames -->
+    <path d="M 160 185 C 150 160, 160 130, 180 120 C 175 140, 195 145, 200 125 C 210 105, 230 115, 225 145 C 220 165, 205 185, 160 185 Z" fill="url(#orangeFlame)" />
+    <path d="M 175 180 C 170 165, 175 148, 188 140 C 185 152, 198 155, 202 142 C 208 130, 218 135, 215 155 C 210 168, 200 180, 175 180 Z" fill="#FFB703" />
+    
+    <!-- Right Flames -->
+    <path d="M 340 185 C 350 160, 340 130, 320 120 C 325 140, 305 145, 300 125 C 290 105, 270 115, 275 145 C 280 165, 295 185, 340 185 Z" fill="url(#orangeFlame)" />
+    <path d="M 325 180 C 330 165, 325 148, 312 140 C 315 152, 302 155, 298 142 C 292 130, 282 135, 285 155 C 290 168, 300 180, 325 180 Z" fill="#FFB703" />
+  </g>
+
+  <!-- Top Fire Extinguisher -->
+  <g id="extinguisher" filter="url(#shadowFilter)">
+    <!-- Cylinder Body -->
+    <rect x="220" y="86" width="60" height="92" rx="20" fill="url(#fireGrad)" stroke="#111827" stroke-width="4" />
+    <!-- Highlight shine -->
+    <path d="M 226 98 Q 230 132 230 165" stroke="#FFA3A3" stroke-width="4" stroke-linecap="round" fill="none" />
+    <!-- Cylinder Base -->
+    <path d="M 224 172 Q 250 178 276 172" stroke="#111827" stroke-width="4" fill="none" />
+    <!-- Neck / Valve Collar -->
+    <rect x="242" y="76" width="16" height="12" fill="#E2E8F0" stroke="#111827" stroke-width="3" />
+    <!-- Valve Body -->
+    <rect x="238" y="66" width="24" height="12" rx="3" fill="#111827" />
+    <!-- Squeeze Handle & Lever -->
+    <path d="M 240 68 L 222 62 L 225 56 L 246 64 Z" fill="#111827" />
+    <path d="M 248 64 L 274 54 L 277 60 L 254 68 Z" fill="#111827" />
+    <!-- Pressure Gauge -->
+    <circle cx="250" cy="52" r="9" fill="#FFFFFF" stroke="#111827" stroke-width="3" />
+    <path d="M 250 52 L 253 47" stroke="#D62828" stroke-width="2" stroke-linecap="round" />
+    <circle cx="250" cy="52" r="2" fill="#111827" />
+    <!-- Hose -->
+    <path d="M 258 72 C 285 70, 298 100, 280 135 C 275 145, 272 165, 272 176" fill="none" stroke="#111827" stroke-width="6" stroke-linecap="round" />
+    <rect x="268" y="166" width="8" height="14" rx="2" fill="#111827" />
+    <!-- Flame Icon on Extinguisher -->
+    <path d="M 250 148 C 242 148, 237 141, 239 133 C 240 126, 250 116, 250 116 C 250 116, 260 126, 261 133 C 263 141, 258 148, 250 148 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Left Fire Hydrant -->
+  <g id="hydrant" filter="url(#shadowFilter)">
+    <!-- Hydrant Base -->
+    <rect x="36" y="304" width="68" height="12" rx="2" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Lower Body -->
+    <rect x="44" y="278" width="52" height="26" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Hydrant Barrel -->
+    <rect x="42" y="210" width="56" height="68" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Center Pumper Outlet -->
+    <circle cx="70" cy="244" r="14" fill="#FFFFFF" stroke="#111827" stroke-width="3.5" />
+    <circle cx="70" cy="244" r="9" fill="url(#fireGrad)" stroke="#111827" stroke-width="2.5" />
+    <circle cx="70" cy="244" r="4" fill="#FFFFFF" />
+    <!-- Left Outlet Cap -->
+    <rect x="22" y="235" width="20" height="18" rx="3" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Right Outlet Cap -->
+    <rect x="98" y="235" width="20" height="18" rx="3" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Hydrant Bonnet / Dome -->
+    <path d="M 40 210 Q 70 190 100 210 Z" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Top Operating Nut -->
+    <rect x="62" y="185" width="16" height="15" rx="2" fill="url(#fireGrad)" stroke="#111827" stroke-width="3" />
+    <!-- Highlight line -->
+    <line x1="50" y1="216" x2="50" y2="272" stroke="#FFA3A3" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Fire Hose Reel Drum -->
+  <g id="hoseReel" filter="url(#shadowFilter)">
+    <!-- Mounting Bracket -->
+    <path d="M 390 286 L 446 286 L 446 226 L 458 226 L 458 298 L 390 298 Z" fill="url(#fireGrad)" stroke="#111827" stroke-width="3.5" />
+    <!-- Outer Reel Flange -->
+    <ellipse cx="440" cy="244" rx="42" ry="48" fill="url(#fireGrad)" stroke="#111827" stroke-width="4" />
+    <!-- Coiled Hose Layers (Black) -->
+    <ellipse cx="440" cy="244" rx="34" ry="40" fill="#111827" stroke="#334155" stroke-width="3" />
+    <ellipse cx="440" cy="244" rx="26" ry="32" fill="#1E293B" stroke="#000000" stroke-width="3" />
+    <ellipse cx="440" cy="244" rx="18" ry="22" fill="#111827" stroke="#334155" stroke-width="2" />
+    <!-- Drum Center Hub -->
+    <circle cx="440" cy="244" r="9" fill="url(#fireGrad)" stroke="#111827" stroke-width="2.5" />
+    <!-- Hanging Hose & Nozzle -->
+    <path d="M 464 260 L 466 295" stroke="#111827" stroke-width="8" stroke-linecap="round" />
+    <!-- Branch pipe Nozzle -->
+    <path d="M 462 295 L 470 295 L 468 316 L 464 316 Z" fill="#111827" stroke="#334155" stroke-width="2" />
+    <rect x="461" y="304" width="10" height="4" fill="#E2E8F0" />
+  </g>
+
+  <!-- ==============================================
+       CENTER EMBLEM: GIANT "MS"
+       ============================================== -->
+  <g id="msLetters" filter="url(#shadowFilter)">
+    <!-- Big Bold M (Fire Red with Faceted Angle) -->
+    <path d="M 124 286 
+             L 156 186 
+             L 214 186 
+             L 242 248 
+             L 270 186 
+             L 302 186 
+             L 254 286 
+             L 218 286 
+             L 194 232 
+             L 170 286 Z" 
+          fill="url(#fireGrad)" 
+          stroke="#111827" 
+          stroke-width="5" 
+          stroke-linejoin="round" />
+
+    <!-- Big Bold S (Deep Dark Navy/Black) -->
+    <path d="M 334 186 
+             L 404 186 
+             L 404 214 
+             L 348 214 
+             C 342 214, 336 218, 336 226 
+             C 336 234, 344 238, 356 240 
+             L 384 245 
+             C 406 248, 416 260, 416 272 
+             C 416 288, 396 298, 368 298 
+             L 294 298 
+             L 294 268 
+             L 364 268 
+             C 370 268, 376 265, 376 259 
+             C 376 253, 368 250, 358 248 
+             L 330 243 
+             C 308 239, 298 227, 298 213 
+             C 298 196, 314 186, 334 186 Z" 
+          fill="url(#blackGrad)" 
+          stroke="#111827" 
+          stroke-width="4.5" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- ==============================================
+       TEXT: FIRE SERVICE
+       ============================================== -->
+  <g id="textFireService">
+    <!-- FIRE (Red) -->
+    <text x="144" y="338" 
+          font-family="'Montserrat', 'Arial Black', Impact, sans-serif" 
+          font-size="38" 
+          font-weight="900" 
+          fill="#D62828" 
+          letter-spacing="1">FIRE</text>
+
+    <!-- SERVICE (Black) -->
+    <text x="246" y="338" 
+          font-family="'Montserrat', 'Arial Black', Impact, sans-serif" 
+          font-size="38" 
+          font-weight="900" 
+          fill="#111827" 
+          letter-spacing="1">SERVICE</text>
+  </g>
+
+  <!-- ==============================================
+       DIVIDER & KUCHAMAN CITY
+       ============================================== -->
+  <g id="kuchamanCity">
+    <!-- Left Divider Line -->
+    <line x1="130" y1="358" x2="168" y2="358" stroke="#D62828" stroke-width="4.5" stroke-linecap="round" />
+    
+    <!-- KUCHAMAN CITY Text -->
+    <text x="250" y="364" 
+          font-family="'Montserrat', 'Inter', sans-serif" 
+          font-size="20" 
+          font-weight="900" 
+          fill="#111827" 
+          text-anchor="middle" 
+          letter-spacing="2.5">KUCHAMAN CITY</text>
+
+    <!-- Right Divider Line -->
+    <line x1="332" y1="358" x2="370" y2="358" stroke="#D62828" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- (राज.) Text in Hindi -->
+    <text x="250" y="396" 
+          font-family="'Montserrat', 'Noto Sans Devanagari', 'Inter', sans-serif" 
+          font-size="26" 
+          font-weight="900" 
+          fill="#111827" 
+          text-anchor="middle" 
+          letter-spacing="1">( राज. )</text>
+  </g>
+
+  <!-- ==============================================
+       BOTTOM FIREFIGHTER HELMET
+       ============================================== -->
+  <g id="fireHelmet" filter="url(#shadowFilter)">
+    <!-- Helmet Wide Curved Brim -->
+    <ellipse cx="250" cy="460" rx="66" ry="14" fill="#991B1B" stroke="#111827" stroke-width="3" />
+    <ellipse cx="250" cy="458" rx="64" ry="12" fill="url(#fireGrad)" stroke="#111827" stroke-width="2.5" />
+    <path d="M 194 458 Q 250 452 306 458" stroke="#FFA3A3" stroke-width="2" fill="none" />
+
+    <!-- Helmet Crown Dome -->
+    <path d="M 205 454 
+             C 205 408, 295 408, 295 454 Z" 
+          fill="url(#fireGrad)" 
+          stroke="#111827" 
+          stroke-width="3.5" />
+
+    <!-- Top Ridge Line -->
+    <path d="M 248 408 L 252 408 L 252 454 L 248 454 Z" fill="#991B1B" />
+
+    <!-- Helmet Front Shield Badge -->
+    <path d="M 236 422 
+             L 264 422 
+             L 262 444 
+             L 250 452 
+             L 238 444 Z" 
+          fill="#FFFFFF" 
+          stroke="#111827" 
+          stroke-width="2.5" />
+    <path d="M 239 425 
+             L 261 425 
+             L 259 442 
+             L 250 448 
+             L 241 442 Z" 
+          fill="#D62828" />
+
+    <!-- White Flame on Helmet Badge -->
+    <path d="M 250 442 C 246 442, 244 438, 245 434 C 246 430, 250 426, 250 426 C 250 426, 254 430, 255 434 C 256 438, 254 442, 250 442 Z" fill="#FFFFFF" />
+  </g>
+</svg>
